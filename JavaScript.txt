@@ -1,0 +1,14 @@
+// Função para adicionar produtos ao carrinho
+document.querySelectorAll('.adicionar-carrinho').forEach(button => {
+    button.addEventListener('click', function() {
+        const produto = this.getAttribute('data-produto');
+        adicionarAoCarrinho(produto);
+    });
+});
+
+function adicionarAoCarrinho(produto) {
+    let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+    carrinho.push(produto);
+    localStorage.setItem('carrinho', JSON.stringify(carrinho));
+    alert('Produto adicionado ao carrinho!');
+}

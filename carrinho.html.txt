@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras - Minha Loja Online</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Minha Loja Online</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produto.html">Produtos</a></li>
+                <li><a href="carrinho.html">Carrinho</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="carrinho">
+            <h2>Seu Carrinho</h2>
+            <ul id="lista-carrinho">
+                <!-- Itens do carrinho serão listados aqui -->
+            </ul>
+            <button id="finalizar-compra">Finalizar Compra</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Minha Loja Online. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Função para exibir os itens no carr
